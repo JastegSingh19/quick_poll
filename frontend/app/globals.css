@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0b12;
+  --card: #151326;
+  --text: #EDE9FE;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 800px at 10% 10%, rgba(124,58,237,0.2), transparent),
+              radial-gradient(1000px 700px at 90% 20%, rgba(219,39,119,0.18), transparent),
+              var(--bg);
+  color: var(--text);
+}
+
+.card {
+  @apply rounded-2xl p-6 shadow-xl;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+}
