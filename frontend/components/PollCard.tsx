@@ -49,7 +49,7 @@ export default function PollCard({ poll, onChanged }:{ poll: Poll; onChanged: (p
                 <span>{opt.text}</span><span>{pct}%</span>
               </div>
               <div className="w-full h-3 rounded-full bg-white/10 overflow-hidden">
-                <motion.div
+                <motion.div<HTMLDivElement>
                   className="h-3 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${pct}%` }}
